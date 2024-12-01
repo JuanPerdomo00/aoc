@@ -13,9 +13,9 @@ def read_input(path: str) -> Tuple[List[int]]:
 
     return left_list, right_list
 
+
 def distance(a: int, b: int) -> int:
     return abs(b - a)
-
 
 
 def part_one():
@@ -34,15 +34,16 @@ def part_one():
 
 def part_two():
     left, right = read_input("./input.txt")
-    
+
     sumatory = 0
-    
-    for num in left:  
+
+    for num in left:
         count_in_right = right.count(num)
         sumatory += num * count_in_right
-    
+
     print(sumatory)
-        
+
+
 def main():
     part_two()
 
